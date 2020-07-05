@@ -86,8 +86,7 @@ addToDone("Exercise 5 is correct");
 // add the string "tomato" onto the end of the vegetables array. 
 // Recommend using the built-in JS operation to add to an array.
 //vjp
-    
-
+    vegetables.push("tomato");
 assert(vegetables,["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"], "Exercise 6");
 addToDone("Exercise 6 is correct")
 
@@ -95,8 +94,8 @@ addToDone("Exercise 6 is correct")
 // Exercise 7
 // Given the array of numbers defined below, reverse the array of numbers that you created above. 
 var someNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-
+//vjp
+var someNumbers = someNumbers.reverse();
 assert(someNumbers, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1], "Exercise 7")
 addToDone("Exercise 7 is correct")
 
@@ -104,7 +103,8 @@ addToDone("Exercise 7 is correct")
 
 // Exercise 8
 // Sort the vegetables in alphabetical order. Recommend finding a way to sort the array with a built-in method
-
+//vjp
+    var vegetables = vegetables.sort();
 assert(vegetables, ['broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 8")
 addToDone("Exercise 8 is correct.")
 
@@ -112,6 +112,9 @@ addToDone("Exercise 8 is correct.")
 
 // Exercise 9
 // Write the code necessary to sort the fruits in reverse alphabetical order
+//vjp 
+    var sortedFruits = fruits.sort();
+    var fruits = sortedFruits.reverse();
 
 assert(fruits, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana'], "Exercise 9")
 addToDone("Exercise 9 is correct.")
