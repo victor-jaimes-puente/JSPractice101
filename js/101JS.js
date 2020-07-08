@@ -314,6 +314,10 @@ addToDone("Exercise 15 is correct.")
 
 // Exercise 16
 // Write a function definition named identity that takes in any input and returns that input. Don't overthink this one!
+//vjp
+    function identity(a){
+        return a;
+    }
 
 assert(identity(fruits), fruits, "Exercise 16");
 assert(identity(vegetables), vegetables, "Exercise 16");
@@ -326,7 +330,16 @@ addToDone("Exercise 16 is correct.")
 
 // Exercise 17
 // Write a function definition named isPositiveOdd that takes in a number and returns true or false if the value is both greater than zero and odd
-
+//vjp
+    function isPositiveOdd(a){
+        if(isPositive(a)){
+            if(isOdd(a)){
+                return true;
+            }else return false;
+        }else{
+            return false;
+        }
+    }
 
 
 assert(isPositiveOdd(3), true, "Exercise 17");
@@ -339,7 +352,16 @@ addToDone("Exercise 17 is correct.")
 
 // Exercise 18
 // Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
-
+//vjp
+    function isPositiveEven(a){
+        if (isPositive(a)) {
+            if (isEven(a)) {
+                return true;
+            }else{
+                return false;
+            }
+        }else return false;
+    }
 assert(isPositiveEven(4), true, "Exercise 18" );
 assert(isPositiveEven(positiveOddNumber), false, "Exercise 18");
 assert(isPositiveEven(positiveEvenNumber), true, "Exercise 18");
