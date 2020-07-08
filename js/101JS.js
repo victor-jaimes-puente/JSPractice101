@@ -372,7 +372,14 @@ addToDone("Exercise 18 is correct.")
 
 // Exercise 19
 // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
-
+//vjp
+    function isNegativeOdd(a){
+        if (isNegative(a)) {
+            if (isOdd(a)) {
+                return true;
+            }else return false;
+        }else return false;
+    }
 assert(isNegativeOdd(-3), true, "Exercise 19" );
 assert(isNegativeOdd(positiveOddNumber), false, "Exercise 19");
 assert(isNegativeOdd(positiveEvenNumber), false, "Exercise 19");
@@ -383,7 +390,14 @@ addToDone("Exercise 19 is correct.")
 
 // Exercise 20
 // Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is both less than zero and even.
-
+//vjp
+    function isNegativeEven(a){
+        if (isNegative(a)) {
+            if(isEven(a)){
+                return true;
+            }else return false;
+        }else return false;
+    }
 assert(isNegativeEven(-4), true, "Exercise 20" );
 assert(isNegativeEven(positiveOddNumber), false, "Exercise 20");
 assert(isNegativeEven(positiveEvenNumber), false, "Exercise 20");
@@ -395,6 +409,10 @@ addToDone("Exercise 20 is correct.")
 
 // Exercise 21
 // Write a function definition named half that takes in a number and returns half the provided number.
+//vjp
+    function half(a){
+        return a*.5;
+    }
 
 assert(half(4), 2, "Exercise 21");
 assert(half(5), 2.5, "Exercise 21");
@@ -408,7 +426,10 @@ addToDone("Exercise 21 is correct.")
 
 // Exercise 22
 // Write a function definition named double that takes in a number and returns double the provided number.
-
+//vjp
+    function double(a){
+        return a*2;
+    }
 assert(double(4), 8, "Exercise 22");
 assert(double(5), 10, "Exercise 22");
 assert(double(positiveOddNumber), positiveOddNumber * 2, "Exercise 22");
