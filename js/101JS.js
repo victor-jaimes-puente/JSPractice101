@@ -722,7 +722,10 @@ addToDone("Exercise 40 is correct.")
 
 // Exercise 41
 // Write a function definition named areaOfCircle that takes in a number representing a circle's radius and returns the area of the circle
-
+//vjp
+    function areaOfCircle(a){
+        return square(a) * Math.PI;
+    }
 
 assert(areaOfCircle(3), 28.274333882308138, "Exercise 41");
 assert(areaOfCircle(5), 78.53981633974483, "Exercise 41");
@@ -732,7 +735,10 @@ addToDone("Exercise 41 is correct.")
 
 // Exercise 42
 // Write a function definition named circumference that takes in a number representing a circle's radius and returns the circumference.
-
+//vjp
+    function circumference(a){
+        return multiply(a,2) * Math.PI;
+    }
 assert(circumference(3), 18.84955592153876, "Exercise 42");
 assert(circumference(5), 31.41592653589793, "Exercise 42");
 assert(circumference(7), 43.982297150257104, "Exercise 42");
@@ -742,7 +748,16 @@ addToDone("Exercise 42 is correct.")
 
 // Exercise 43
 // Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
+//vjp
+    function isVowel(a){
+    var toLower = a.toLowerCase();
+    if (toLower === "a" || toLower === "e" || toLower === "i" || toLower === "o" || toLower === "u" ){
+        return true;
+    }else {
+        return false;
+    }
 
+    }
 assert(isVowel("a"), true, "Exercise 43");
 assert(isVowel("U"), true, "Exercise 43");
 assert(isVowel("banana"), false, "Exercise 43");
@@ -753,7 +768,17 @@ addToDone("Exercise 43 is correct.")
 
 // Exercise 44
 // Write a function definition named hasVowels that takes in value and returns true if the string contains any vowels.
-
+//vjp
+    function hasVowels(a){
+        var result = false;
+        var arrayed = Array.from(a);
+        arrayed.forEach(function(letter){
+            if(isVowel(letter)){
+                result = true;
+            }
+        })
+            return result;
+    }
 assert(hasVowels("banana"), true, "Exercise 44");
 assert(hasVowels("ubuntu"), true, "Exercise 44");
 assert(hasVowels("QQQQ"), false, "Exercise 44");
