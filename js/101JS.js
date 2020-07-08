@@ -442,7 +442,10 @@ addToDone("Exercise 22 is correct.")
 
 // Exercise 23
 // Write a function definition named triple that takes in a number and returns triple the provided number.
-
+//vjp
+    function triple(a){
+        return a*3;
+    }
 assert(triple(4), 12, "Exercise 23");
 assert(triple(5), 15, "Exercise 23");
 assert(triple(positiveOddNumber), positiveOddNumber * 3, "Exercise 23");
@@ -455,7 +458,10 @@ addToDone("Exercise 23 is correct.")
 
 // Exercise 24
 // Write a function definition named reverseSign that takes in a number and returns the provided number but with the sign reversed.
-
+//vjp 
+    function reverseSign(a){
+        return a * -1;
+    }
 assert(reverseSign(4), -4, "Exercise 24");
 assert(reverseSign(-5), 5, "Exercise 24");
 assert(reverseSign(positiveOddNumber), positiveOddNumber * -1, "Exercise 24");
@@ -468,7 +474,11 @@ addToDone("Exercise 24 is correct.")
 
 // Exercise 25
 // Write a function definition named absoluteValue that takes in a number and returns the absolute value of the provided number
-
+//vjp
+    function absoluteValue(a){
+       a = Math.abs(a);
+       return a;
+    }
 assert(absoluteValue(4), 4, "Exercise 25");
 assert(absoluteValue(-5), 5, "Exercise 25");
 assert(absoluteValue(positiveOddNumber), positiveOddNumber, "Exercise 25");
@@ -481,7 +491,14 @@ addToDone("Exercise 25 is correct.")
 
 // Exercise 26
 // Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number is evenly divisible by 3.
-
+//vjp
+    function isMultipleOfThree(a){
+        if (a % 3 == 0) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 assert(isMultipleOfThree(3), true, "Exercise 26");
 assert(isMultipleOfThree(15), true, "Exercise 26");
 assert(isMultipleOfThree(9), true, "Exercise 26");
@@ -494,7 +511,14 @@ addToDone("Exercise 26 is correct.")
 
 // Exercise 27
 // Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
-
+//vjp
+    function isMultipleOfFive(a){
+        if (a % 5 == 0) {
+            return true;
+        }else {
+            return false;
+        }
+    }
 assert(isMultipleOfFive(3), false, "Exercise 27");
 assert(isMultipleOfFive(15), true, "Exercise 27");
 assert(isMultipleOfFive(9), false, "Exercise 27");
@@ -506,7 +530,18 @@ addToDone("Exercise 27 is correct.")
 
 // Exercise 28
 // Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
-
+//vjp
+    function isMultipleOfBothThreeAndFive(a){
+        if (isMultipleOfThree(a)) {
+            if (isMultipleOfFive(a)) {
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false;
+        }
+    }
 assert(isMultipleOfBothThreeAndFive(15), true, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(45), true, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(3), false, "Exercise 28");
