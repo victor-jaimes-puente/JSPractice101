@@ -214,7 +214,10 @@ assert(plusTwo(0), 2, "zero plus 2 is two")
 
 // Exercise 11
 // Write a function definition for a function named addOne that takes in a number and returns that number plus one
-
+//vjp
+    function addOne(a){
+        return a + 1;
+    }
 
 
 assert(addOne(2), 3, "Exercise 11");
@@ -231,7 +234,14 @@ addToDone("Exercise 11 is correct.")
 // Is 5 positive? Is 0.25 positive? Is 0.00001 positive? Is -0.001 positive? 
 // Is zero itself positive? What about infinity? What about negative infinity?
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators for guidance with JS comparison operators.
-
+//vjp
+    function isPositive(a){
+        if (a > 0) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 
 
 assert(isPositive(0.25), true, "Exercise 12");
@@ -249,7 +259,14 @@ addToDone("Exercise 12 is correct.")
 
 // Exercise 13
 // Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
-
+//vjp
+    function isNegative(a){
+        if (a < 0) {
+            return true;
+        }else{
+            return false;
+        }
+    }
 
 
 assert(isNegative(positiveOddNumber), false, "Exercise 13");
@@ -261,6 +278,14 @@ addToDone("Exercise 13 is correct.")
 
 // Exercise 14
 // Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
+//vjp
+    function isOdd(a){
+        if(a % 2 != 0){
+            return true;
+        } else{
+            return false;
+        }
+    }
 
 assert(isOdd(positiveOddNumber), true, "Exercise 14");
 assert(isOdd(positiveEvenNumber), false, "Exercise 14");
@@ -270,6 +295,14 @@ addToDone("Exercise 14 is correct.")
 
 // Exercise 15
 // Write a function definition named isEven that takes in a number and returns true or false if that number is even.
+//vjp
+      function isEven(a){
+        if(a % 2 == 0){
+            return true;
+        } else{
+            return false;
+        }
+    }
 
 assert(isEven(2), true, "Exercise 15");
 assert(isEven(positiveOddNumber), false, "Exercise 15");
